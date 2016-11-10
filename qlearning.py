@@ -40,7 +40,7 @@ class Qlearning:
         :return: the best action from the given state
         """
         # Return the action (index) with maximum Q-value
-        return self._qmatrix[[state]].idxmax()[0]
+        return self._qmatrix[[state]].idxmax().iloc[0]
 
     def update_model(self, state, action, reward, next_state):
         """
